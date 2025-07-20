@@ -1,129 +1,111 @@
-# Created by https://www.toptal.com/developers/gitignore/api/flutter,dart,intellij,xcode
-# Edit at https://www.toptal.com/developers/gitignore?templates=flutter,dart,intellij,xcode
+# ───────────────────────────────
+# 🔧 Miscellaneous
+# ───────────────────────────────
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
 
-### Dart ###
-# Files and directories created by pub
+# ───────────────────────────────
+# 🧠 IDEs
+# ───────────────────────────────
+
+# IntelliJ / Android Studio
+*.iml
+*.ipr
+*.iws
+.idea/
+.idea/*
+
+# Run configs (optional)
+.idea/runConfigurations/
+
+# VS Code (optional: uncomment if you're not sharing launch configs)
+.vscode/
+
+# ───────────────────────────────
+# 🐦 Flutter / Dart
+# ───────────────────────────────
 .dart_tool/
-.packages
-build/
-
-# Lock file – should be committed for apps, not packages
-pubspec.lock
-
-# Directory created by dartdoc
-doc/api/
-
-# dotenv environment variables file
-.env*
-
-# Avoid committing generated Javascript files:
-*.dart.js
-*.info.json
-*.js
-*.js_
-*.js.deps
-*.js.map
-
 .flutter-plugins
 .flutter-plugins-dependencies
-
-### Flutter ###
-**/doc/api/
-.fvm/flutter_sdk
-.pub-cache/
+.packages
 .pub/
+.pub-cache/
+build/
+**/doc/api/
+
+# Lock file – keep for apps, ignore for packages
+pubspec.lock
+
+# Flutter local metadata
+.metadata
+
+# Coverage reports
 coverage/
+
+# Generated registrants
 lib/generated_plugin_registrant.dart
 
-### Android ###
-**/android/**/gradle-wrapper.jar
+# Symbolication & obfuscation
+app.*.symbols
+app.*.map.json
+
+# ───────────────────────────────
+# 🤖 Android
+# ───────────────────────────────
+/android/app/debug
+/android/app/profile
+/android/app/release
 **/android/.gradle/
 **/android/captures/
 **/android/key.properties
 **/android/local.properties
+**/android/**/gradle-wrapper.jar
 **/android/**/GeneratedPluginRegistrant.java
 
-### iOS/Xcode ###
+# ───────────────────────────────
+# 🍏 iOS / Xcode
+# ───────────────────────────────
 **/ios/**/*.mode1v3
 **/ios/**/*.mode2v3
-**/ios/**/*.moved-aside
 **/ios/**/*.pbxuser
 **/ios/**/*.perspectivev3
+**/ios/**/*.moved-aside
 **/ios/**/*sync/
 **/ios/**/.sconsign.dblite
 **/ios/**/.tags*
-**/ios/**/.vagrant/
 **/ios/**/DerivedData/
-**/ios/**/Icon?
 **/ios/**/Pods/
 **/ios/**/.symlinks/
-**/ios/**/profile
 **/ios/**/xcuserdata
-**/ios/.generated/
 **/ios/Flutter/.last_build_id
-**/ios/Flutter/App.framework
-**/ios/Flutter/Flutter.framework
-**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/flutter_export_environment.sh
 **/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/App.framework
+**/ios/Flutter/Flutter.podspec
 **/ios/Flutter/app.flx
 **/ios/Flutter/app.zip
 **/ios/Flutter/flutter_assets/
-**/ios/Flutter/flutter_export_environment.sh
 **/ios/ServiceDefinitions.json
 **/ios/Runner/GeneratedPluginRegistrant.*
 
-# Exceptions
+# Exceptions for iOS project files
 !**/ios/**/default.mode1v3
 !**/ios/**/default.mode2v3
 !**/ios/**/default.pbxuser
 !**/ios/**/default.perspectivev3
-!/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
 
-### IntelliJ / Android Studio ###
-.idea/**/workspace.xml
-.idea/**/tasks.xml
-.idea/**/usage.statistics.xml
-.idea/**/dictionaries
-.idea/**/shelf
-.idea/**/aws.xml
-.idea/**/contentModel.xml
-.idea/**/dataSources/
-.idea/**/dataSources.ids
-.idea/**/dataSources.local.xml
-.idea/**/sqlDataSources.xml
-.idea/**/dynamic.xml
-.idea/**/uiDesigner.xml
-.idea/**/dbnavigator.xml
-.idea/**/gradle.xml
-.idea/**/libraries
-.idea/**/mongoSettings.xml
-.idea/codestream.xml
-.idea/httpRequests
-.idea/**/azureSettings.xml
-.idea/caches/build_file_checksums.ser
-.idea/**/sonarlint/
-.idea/**/sonarIssues.xml
-.idea/**/markdown-navigator.xml
-.idea/**/markdown-navigator-enh.xml
-.idea/**/markdown-navigator/
-.idea/replstate.xml
-.idea_modules/
-.idea_modules/
-*.iws
-out/
-*.ipr
-
-# CMake
-cmake-build-*/
-
-# Xcode
-xcuserdata/
-*.xcscmblueprint
-*.xccheckout
-*.xcodeproj/*
-!*.xcodeproj/project.pbxproj
-!*.xcodeproj/xcshareddata/
-!*.xcodeproj/project.xcworkspace/
-!*.xcworkspace/contents.xcworkspacedata
-/*.gcno
-**/xcshareddata/WorkspaceSettings.xcsettings
+# ───────────────────────────────
+# 🔐 Secrets
+# ───────────────────────────────
+.env*
